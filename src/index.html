@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Cartas aleatorias</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,28 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div>
+      <label>Elige cuantas cartas quieres: </label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="52"
+        value="5"
+      /><br /><br />
+    </div>
+    <div>
+      <button id="giveMeCard">Pedir cartas:</button>
+    </div>
+    <div id="misCartas">
+      <div id="card">
+        <h1 id="pokerIconos1">♥</h1>
+        <h1 id="pokerCards">3</h1>
+        <h1 id="pokerIconos2">♥</h1>
       </div>
     </div>
+    <button id="botonOrdenar">Ordenar cartas:</button>
+    <div id="cartasOrdenadas"></div>
   </body>
 </html>
